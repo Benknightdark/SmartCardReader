@@ -86,8 +86,14 @@ namespace WpfApp1
                         var cardIssueDate = GetIssueDate(data[50..57]);
 
                         System.Diagnostics.Debug.WriteLine("\r\n=== Health Card Content: ===\r\n");
-                        CardNumber.Content = holderSex;
-                       System.Diagnostics.Debug.WriteLine(
+                        CardNumber.Text = cardNumber;
+                        HolderID.Text = holderIdNum;
+
+                        HolderSex.Text = holderSex;
+
+                        HolderBirth.Text = holderBirth;
+                        CardHolderName.Text = cardHolderName;
+                        System.Diagnostics.Debug.WriteLine(
                             $"Card Number  : { cardNumber }\r\n" +
                             $"Holder Name  : { cardHolderName }\r\n" +
                             $"Holder ID    : { holderIdNum }\r\n" +

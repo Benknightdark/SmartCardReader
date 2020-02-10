@@ -5,10 +5,63 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <Button Content="Button" RenderTransformOrigin="-5.884,-6.069" Margin="40,27,607,330" Click="submit_Click"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="361,78,0,0" VerticalAlignment="Top" x:Name="CardNumber"/>
+        Title="MainWindow" Width="1024" Height="768"
+    WindowState="Maximized" 
+         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+         TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal" 
+        TextOptions.TextRenderingMode="Auto"        
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        
+        >
+    <materialDesign:Card>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+           
+            <StackPanel Grid.Row="0"  Margin="20 0 20 0 ">
 
-    </Grid>
+                <TextBlock FontWeight="Bold" Margin="0 20 0 0 " FontSize="15px">卡片編號</TextBlock>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="CardNumber"  FontSize="20px">
+                </TextBlock>
+                <Separator Margin="0 0 0 20 "/>
+                <TextBlock FontWeight="Bold" FontSize="15px">持卡人姓名</TextBlock>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="CardHolderName"  FontSize="20px">
+
+                </TextBlock>
+                <Separator Margin="0 0 0 20 "/>
+                <TextBlock FontWeight="Bold" FontSize="15px">身份字號</TextBlock>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="HolderID"  FontSize="20px">
+                    
+                </TextBlock>
+                <Separator Margin="0 0 0 20 "/>
+
+                <TextBlock FontWeight="Bold" FontSize="15px">姓別</TextBlock>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="HolderSex"  FontSize="20px">
+                    
+                </TextBlock>
+                <Separator Margin="0 0 0 20 "/>
+
+                <TextBlock FontWeight="Bold" FontSize="15px">出生年月</TextBlock>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="HolderBirth"  FontSize="20px">
+                    
+                </TextBlock>
+                <Separator Margin="0 0 0 20 "/>
+
+            </StackPanel>
+
+            <RepeatButton   Grid.Row="1" 
+                    Content="查詢"
+                    Style="{StaticResource MaterialDesignFlatMidBgButton}" Click="submit_Click">
+                
+            </RepeatButton>
+
+  
+        </Grid>
+    </materialDesign:Card>
 </Window>
