@@ -30,29 +30,33 @@
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="CardNumber"  FontSize="20px">
                 </TextBlock>
                 <Separator Margin="0 0 0 20 "/>
+                
                 <TextBlock FontWeight="Bold" FontSize="15px">持卡人姓名</TextBlock>
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="CardHolderName"  FontSize="20px">
-
                 </TextBlock>
                 <Separator Margin="0 0 0 20 "/>
+                
                 <TextBlock FontWeight="Bold" FontSize="15px">身份字號</TextBlock>
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="HolderID"  FontSize="20px">
-                    
                 </TextBlock>
                 <Separator Margin="0 0 0 20 "/>
 
                 <TextBlock FontWeight="Bold" FontSize="15px">姓別</TextBlock>
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="HolderSex"  FontSize="20px">
-                    
                 </TextBlock>
                 <Separator Margin="0 0 0 20 "/>
 
                 <TextBlock FontWeight="Bold" FontSize="15px">出生年月</TextBlock>
                 <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="HolderBirth"  FontSize="20px">
-                    
                 </TextBlock>
                 <Separator Margin="0 0 0 20 "/>
 
+
+
+                <TextBlock FontWeight="Bold" FontSize="15px">卡片發行日期</TextBlock>
+                <TextBlock TextWrapping="Wrap" VerticalAlignment="Center" x:Name="CardIssueOn"  FontSize="20px">
+                </TextBlock>
+                <Separator Margin="0 0 0 20 "/>
             </StackPanel>
 
             <RepeatButton   Grid.Row="1" 
